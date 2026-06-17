@@ -19,7 +19,7 @@ public class Main {
         System.out.print("Enter target value to search for: ");
         int target = input.nextInt();
 
-        Algorithm search = new Algorithm();
+        Algorithms search = new Algorithms();
 
         // Linear Search
         int linearResult = search.linearSearch(array, target);
@@ -30,6 +30,7 @@ public class Main {
             System.out.println("Linear Search: Target not found");
         }
 
+        
         // Binary Search requires sorted array
         Arrays.sort(array);
 
@@ -44,3 +45,4 @@ public class Main {
         input.close();
     }
 }
+ 
